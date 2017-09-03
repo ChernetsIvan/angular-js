@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        My AngularJS Learning
+    </title>
+    <script src="../libs/angular/js/angular.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <div ng-controller="firstCtrl">
+        <div>My ctrl name is {{name}}</div>
+        <div>My ctrl color is {{color}}</div>
+        <button ng-click='reverse()'>Reverse</button>
+        <br/>
+        -----------------------------------------
+        <foo-bar name="{{name}}" color="color" reverse="reverse()"></foo-bar>
+    </div>
+</body>
+</html>

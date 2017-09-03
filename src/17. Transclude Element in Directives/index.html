@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        AngularJS Learning
+    </title>
+    <script src="../libs/angular/js/angular.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href='style.css'>
+</head>
+<body>
+    My Form here
+    <div wrap-in='red'>
+        <form wrap-in='table'>        
+            <div>
+                <label>Email:</label>
+                <input type="text" placeholder="Place your email"/>
+            </div>
+            <div>
+                <label>Password:</label>
+                <input type="password" placeholder="Enter your password" />
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <script type="text/ng-template" id="red">
+        <div class="red">
+        </div>
+    </script>
+
+    <script type="text/ng-template" id="table">
+        <div>Header for table</div>
+    </script>
+</body>
+</html>

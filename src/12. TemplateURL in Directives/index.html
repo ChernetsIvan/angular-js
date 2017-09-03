@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        AngularJS Learning
+    </title>
+    <script src="../libs/angular/js/angular.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <foo-bar></foo-bar>
+
+    <script type="text/ng-template" id="bookmarks.html">
+        <div ng-repeat="b in bookmarks">
+            {{b.name}}
+        </div>
+    </script>
+</body>
+</html>
